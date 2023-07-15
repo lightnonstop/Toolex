@@ -73,8 +73,8 @@ function Navbar() {
             icon={<MdMenu className="text-white text-2xl max-sm:text-xl" />}
           />
           </div>
-          <button className="bg-primary flex flex-row gap-5 items-center rounded p-3 px-4 cursor-pointer max-tablet:hidden" onClick={() => 
-            setToggleCategory(prev => !prev)}>
+          <button className="bg-primary flex flex-row gap-5 items-center rounded p-3 px-4 cursor-pointer max-tablet:hidden w-52" onClick={() => 
+            setToggleCategory(!toggleCategory)}>
             <div className="flex flex-row gap-2">
               <MdMenu className="text-white text-2xl" />
             <span className="text-white text-sm capitalize">all categories</span>
