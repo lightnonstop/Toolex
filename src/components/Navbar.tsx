@@ -43,9 +43,9 @@ function Navbar() {
             </div>
             <>
               {toggleCatetory
-              ? <TbChevronUp className="text-white" />
-              : <TbChevronDown className="text-white" />}
-            </div>
+              ? <TbChevronUp className="text-white text-[17px]" />
+              : <TbChevronDown className="text-white text-[17px]" />}
+            </>
           </button>
         </div>
       </div>
