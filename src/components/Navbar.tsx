@@ -36,8 +36,7 @@ function Navbar() {
 
       {/* Bottom Navigation */}
       <div className="px-12 max-tablet:px-16 max-mobile:px-4 max-desktop:px-4 pt-5">
-        <div>
-          <button className="bg-primary" onClick={() => 
+          <button className="bg-primary flex flex-row gap-5 items-center rounded p-4 cursor-pointer" onClick={() => 
             setToggleCatetory(prev => !prev)}>
             <MdMenu className="text-white" />
             <span className="text-white capitalize">all categories</span>
