@@ -7,7 +7,7 @@ function Layout() {
         <div className=" bg-secondary">
           <Navbar />
         </div>
-        <div>
+        <div className="flex flex-row justify-between">
           <LeftSidebar />
           <Outlet />
           <RightSidebar />
