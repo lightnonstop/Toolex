@@ -8,6 +8,9 @@ import image6 from './6-20x20.png';
 import image9 from './9-20x20.png';
 import image10 from './10-20x20.png';
 import image11 from './11-20x20.png';
+import Alexa from './Alexa.jpg';
+import Eleanor from './Eleanor.jpg';
+import Luiz from './Luiz.jpg';
 
 export {
     logo,
@@ -20,4 +23,7 @@ export {
     image9,
     image10,
     image11,
+    Alexa,
+    Eleanor,
+    Luiz,    
 }
