@@ -33,7 +33,7 @@ const pageLists: { label: string, link: string }[] =
     },
 ];
 function Navbar() {
-  const [toggleCatetory, setToggleCatetory] = useState<boolean>(false);
+  const [toggleCategory, setToggleCategory] = useState<boolean>(true);
   const [activeLink, setActiveLink] = useState<string>('/');
   
   return (
@@ -74,13 +74,13 @@ function Navbar() {
           />
           </div>
           <button className="bg-primary flex flex-row gap-5 items-center rounded p-3 px-4 cursor-pointer max-tablet:hidden" onClick={() => 
-            setToggleCatetory(prev => !prev)}>
+            setToggleCategory(prev => !prev)}>
             <div className="flex flex-row gap-2">
               <MdMenu className="text-white text-2xl" />
             <span className="text-white capitalize">all categories</span>
             </div>
             <>
-              {toggleCatetory
+              {toggleCategory
               ? <TbChevronUp className="text-white text-[17px]" />
               : <TbChevronDown className="text-white text-[17px]" />}
             </>
