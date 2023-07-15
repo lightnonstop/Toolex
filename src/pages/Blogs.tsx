@@ -1,11 +1,12 @@
 import { Title } from "../components"
 
-function Home() {
+function Blogs() {
   return (
     <>
       <Title label="Home" />
-      <div>Home</div>
+      <div>Blogs</div>
     </>
+    
   )
 }
-export default Home
+export default Blogs
