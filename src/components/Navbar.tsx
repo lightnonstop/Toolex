@@ -1,10 +1,40 @@
 import { NavigationComponent } from "."
-import { MdLocalPhone, MdAccountCircle, MdShoppingCart, MdMenu } from 'react-icons/md';
+import { MdLocalPhone, MdAccountCircle, MdShoppingCart, MdMenu, MdSearch } from 'react-icons/md';
 import { TbChevronDown, TbChevronUp } from 'react-icons/tb'
 import { logo } from "../assets";
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
+const pageLists: { label: string, link: string }[] =
+  [
+    { 
+      label: "home", 
+      link: "/",
+    },
+    { 
+      label: "specials", 
+      link: "/product/special",
+    },
+    { 
+      label: "contact", 
+      link: "/information/contact",
+    },
+    { 
+      label: "site map", 
+      link: "/information/sitemap",
+    },
+    { 
+      label: "brands", 
+      link: "/product/brands",
+    },
+    { 
+      label: "blogs", 
+      link: "/blogs",
+    },
+];
 function Navbar() {
   const [toggleCatetory, setToggleCatetory] = useState<boolean>(false);
+  const [activeLink, setActiveLink] = useState<string>('/');
   
   return (
     <div className="py-5">
@@ -35,10 +65,18 @@ function Navbar() {
       </div>
 
       {/* Bottom Navigation */}
-      <div className="px-12 max-tablet:px-16 max-mobile:px-4 max-desktop:px-4 pt-5">
-          <button className="bg-primary flex flex-row gap-5 items-center rounded p-4 cursor-pointer" onClick={() => 
+      <div className="px-12 max-tablet:px-16 max-mobile:px-4 max-desktop:px-4 pt-5 flex flex-row justify-between items-center gap-2">
+          <div className="hidden max-tablet:block">
+            <NavigationComponent
+            title=""
+            subtitle=""
+            icon={<MdMenu className="text-white text-2xl max-sm:text-xl" />}
+          />
+          </div>
+          <button className="bg-primary flex flex-row gap-5 items-center rounded p-4 cursor-pointer max-tablet:hidden" onClick={() => 
             setToggleCatetory(prev => !prev)}>
-            <MdMenu className="text-white" />
+            <div className="flex flex-row gap-2">
+              <MdMenu className="text-white text-2xl" />
             <span className="text-white capitalize">all categories</span>
             </div>
             <>
@@ -47,7 +85,31 @@ function Navbar() {
               : <TbChevronDown className="text-white text-[17px]" />}
             </>
           </button>
-        </div>
+          <nav className="max-desktop:hidden">
+            <ul className="flex flex-row gap-7">
+              {pageLists.map((pageList, index) => (
+                <li className="text-white capitalize text-xl" key={index}>
+                  <Link onClick={() => setActiveLink(pageList.link)} className={`
+                  max-[1199px]:text-[1.0rem]
+                  after:content-[''] 
+                  after:block 
+                  after:w-0 
+                  after:h-[2px] 
+                  after:duration-300 
+                  after:transition-all 
+                  ${activeLink === pageList.link 
+                  ? 'after:w-[30px] after:bg-primary' 
+                  : 'hover:after:w-[30px] after:bg-white'}`} to={pageList.link}>{pageList.label}</Link>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div>
+            <input type="search" name="search" id="search" placeholder="Search here..." />
+            <button>
+              <MdSearch />
+            </button>
+          </div>
       </div>
     </div>
   )
