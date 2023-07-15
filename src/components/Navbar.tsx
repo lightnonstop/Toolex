@@ -40,7 +40,8 @@ function Navbar() {
             setToggleCatetory(prev => !prev)}>
             <MdMenu className="text-white" />
             <span className="text-white capitalize">all categories</span>
-            <div>
+            </div>
+            <>
               {toggleCatetory
               ? <TbChevronUp className="text-white" />
               : <TbChevronDown className="text-white" />}
