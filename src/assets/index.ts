@@ -26,5 +26,6 @@ export {
     image11,
     Alexa,
     Eleanor,
-    Luiz,    
+    Luiz, 
+    leftBanner,   
 }
