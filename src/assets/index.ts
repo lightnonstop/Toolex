@@ -11,6 +11,7 @@ import image11 from './11-20x20.png';
 import Alexa from './Alexa.jpg';
 import Eleanor from './Eleanor.jpg';
 import Luiz from './Luiz.jpg';
+import leftBanner from './left-banner.jpg';
 
 export {
     logo,
