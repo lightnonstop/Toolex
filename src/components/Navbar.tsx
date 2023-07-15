@@ -104,10 +104,10 @@ function Navbar() {
               ))}
             </ul>
           </nav>
-          <div>
-            <input type="search" name="search" id="search" placeholder="Search here..." />
-            <button>
-              <MdSearch />
+          <div className="flex flex-row">
+            <input type="search" name="search" id="search" placeholder="Search here..." className="rounded-s border-none focus:outline-none outline-none pl-3 py-2 flex-1 placeholder:text-grey" />
+            <button className="bg-primary rounded-e p-2">
+              <MdSearch className="text-white text-2xl max-sm:text-xl"/>
             </button>
           </div>
       </div>
