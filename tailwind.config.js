@@ -10,7 +10,7 @@ export default {
         dimWhite: 'hsl(0,0%,96.86%)',
         grey: 'hsl(234.15,18.39%,56.27%)',
         dimGrey: 'hsl(0,0%,86.67%)',
-        veryDimGrey: 'hsl(200,14.81%,31.76%)',
+        veryDimGrey: 'hsl(0,0%,51.76%)',
         lightSecondary: 'hsl(198.46,21.67%,23.53%)',
       },
     },
