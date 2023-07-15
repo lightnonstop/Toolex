@@ -1,14 +1,16 @@
 import { Outlet } from "react-router-dom"
 import { Footer, LeftSidebar, Navbar, RightSidebar } from "."
+import { useState } from "react";
 
 function Layout() {
+  const [toggleCategory, setToggleCategory] = useState<boolean>(true);
   return (
     <div>
         <div className=" bg-secondary">
-          <Navbar />
+          <Navbar  toggleCategory={toggleCategory} setToggleCategory={setToggleCategory} />
         </div>
         <div className="flex flex-row justify-between">
-          <LeftSidebar />
+          <LeftSidebar toggleCategory={toggleCategory} />
           <Outlet />
           <RightSidebar />
         </div>
