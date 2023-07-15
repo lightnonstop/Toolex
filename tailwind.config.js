@@ -10,7 +10,7 @@ export default {
         dimWhite: 'hsl(0,0%,96.86%)',
         grey: 'hsl(234.15,18.39%,56.27%)',
         dimGrey: 'hsl(0,0%,86.67%)',
-        lightPrimary: 'hsl(198.46,21.67%,23.53%)',
+        lightSecondary: 'hsl(198.46,21.67%,23.53%)',
       },
     },
     screens: {
