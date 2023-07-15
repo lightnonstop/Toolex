@@ -32,8 +32,11 @@ const pageLists: { label: string, link: string }[] =
       link: "/blogs",
     },
 ];
-function Navbar() {
-  const [toggleCategory, setToggleCategory] = useState<boolean>(true);
+interface NavbarProps{
+  toggleCategory: boolean;
+  setToggleCategory: React.Dispatch<React.SetStateAction<boolean>>;
+}
+function Navbar({ toggleCategory, setToggleCategory }: NavbarProps) {
   const [activeLink, setActiveLink] = useState<string>('/');
   
   return (
