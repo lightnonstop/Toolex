@@ -77,7 +77,7 @@ function Navbar() {
             setToggleCategory(prev => !prev)}>
             <div className="flex flex-row gap-2">
               <MdMenu className="text-white text-2xl" />
-            <span className="text-white capitalize">all categories</span>
+            <span className="text-white text-sm capitalize">all categories</span>
             </div>
             <>
               {toggleCategory
