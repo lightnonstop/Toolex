@@ -12,7 +12,19 @@ import Alexa from './Alexa.jpg';
 import Eleanor from './Eleanor.jpg';
 import Luiz from './Luiz.jpg';
 import leftBanner from './left-banner.jpg';
-
+import breakerMachine from './breaker-machine.jpg';
+import drillingMachine from './drilling-machine.jpg';
+import bandSaw from './bandsaw.jpg';
+import yellowHandDrill from './yellowhanddrill.jpg';
+import screwDriver from './screwdriver.jpg';
+import heatGun1 from './heatgun1.jpg';
+import heatGun2 from './heatgun2.jpg';
+import clawHammer from './clawHammer.jpg';
+import blueDrill from './bluedrill.jpg';
+import machineDriver from './machinedriver.jpg';
+import measuringTape from './measuringtape.jpg';
+import blockHeadHammer from './blockheadhammer.jpg';
+import powerHandSaw from './powerhandsaw.jpg';
 export {
     logo,
     image1,
@@ -27,5 +39,18 @@ export {
     Alexa,
     Eleanor,
     Luiz, 
-    leftBanner,   
+    leftBanner,
+    breakerMachine, 
+    drillingMachine,
+    bandSaw,
+    yellowHandDrill,
+    screwDriver,
+    heatGun1,
+    heatGun2,
+    clawHammer,
+    blueDrill,
+    machineDriver,
+    measuringTape,
+    powerHandSaw,
+    blockHeadHammer,
 }
