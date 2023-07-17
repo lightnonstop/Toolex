@@ -9,10 +9,14 @@ function Layout() {
         <div className=" bg-secondary">
           <Navbar  toggleCategory={toggleCategory} setToggleCategory={setToggleCategory} />
         </div>
-        <div className="flex flex-row justify-between">
-          <LeftSidebar toggleCategory={toggleCategory} />
+        <div className="flex flex-row justify-between max-tablet:flex-col">
+          <div className="max-desktop:order-2">
+            <LeftSidebar toggleCategory={toggleCategory} />
+          </div>
           <Outlet />
-          <RightSidebar />
+          <div className="max-desktop:order-3">
+            <RightSidebar />
+          </div>
         </div>
       <Footer />
     </div>
