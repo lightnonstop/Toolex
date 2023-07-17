@@ -219,7 +219,7 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
           <img className="w-full" src={leftBanner} alt="left-banner" />
         </div>
 
-        <div className={`border border-t-dimGrey bg-white rounded p-1 h-[27rem] w-full duration-500 transition-all z-20 hover:
+        <div className={`border border-t-dimGrey bg-white rounded p-1 w-full duration-500 transition-all z-20 hover:
        flex flex-col gap-6`}>
           <div className="flex flex-row items-center justify-between bg-primary p-2 rounded">
             <p className="capitalize text-white font-semibold">Special products</p>
