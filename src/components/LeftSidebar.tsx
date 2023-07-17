@@ -262,14 +262,19 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
                     </p>
                   </div>
                 </div>
-                <div className="flex flex-col items-center">
-                  <ReactStars
-                    count={5}
-                    value={product.rating}
-                    size={22}
-                    edit={false}
-                    activeColor="#ffd700"
-                  />
+                <div className="flex flex-col items-center relative h-12 -mt-1 pt-2">
+                  <div className="stars absolute">
+                    <ReactStars
+                      count={5}
+                      value={product.rating}
+                      size={22}
+                      edit={false}
+                      activeColor="#ffd700"
+                    />
+                  </div>
+                  <div className="add-to-cart opacity-0 absolute duration-300 transition-all">
+                    <button className="uppercase text-sm text-primary hover:text-secondary border-b border-b-primary hover:border-b-secondary duration-300 transition-all font-semibold" type="button">add to cart</button>
+                  </div>
                 </div>
               </div>
             ))}
