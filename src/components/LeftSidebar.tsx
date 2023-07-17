@@ -232,7 +232,7 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
               </button>
             </div>
           </div>
-          <Slider ref={setSliderRef} {...sliderSettings}>
+          <Slider ref={setSpecialProductSliderRef} {...specialProductSliderSettings} className="max-tablet:h-[25rem]">
             {specialProduct.map((product, index) => (
               <div key={index} className="special-product-img-container">
                 <div className="flex flex-row items-center justify-center mb-4 relative">
