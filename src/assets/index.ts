@@ -25,6 +25,9 @@ import machineDriver from './machinedriver.jpg';
 import measuringTape from './measuringtape.jpg';
 import blockHeadHammer from './blockheadhammer.jpg';
 import powerHandSaw from './powerhandsaw.jpg';
+import piercingDrill from './piercingdrill.jpg';
+import catRightBanner1 from './cat-rightbanner-1.jpg';
+import catRightBanner2 from './cat-rightbanner-2.jpg'
 export {
     logo,
     image1,
@@ -53,4 +56,7 @@ export {
     measuringTape,
     powerHandSaw,
     blockHeadHammer,
+    piercingDrill,
+    catRightBanner1,
+    catRightBanner2,
 }
