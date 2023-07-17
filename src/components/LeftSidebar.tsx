@@ -161,6 +161,16 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
     // autoplay: true,
     autoplaySpeed: 3000,
   }
+
+  const handleWindowResize = () => {
+      setWindowWidth(window.innerWidth)
+  }
+  useEffect(() => {
+    window.addEventListener('resize', handleWindowResize)
+    return (): void => {
+      window.removeEventListener('resize', handleWindowResize)
+    }
+  }, [])
   return (
     <section className="py-5 pl-12 max-tablet:px-16 max-mobile:px-4 max-desktop:pl-4 flex flex-col w-64 max-tablet:w-full">
       <nav className="border-2 border-primary rounded px-4 py-2 h-[27rem] w-full max-tablet:hidden">
