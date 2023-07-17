@@ -1,4 +1,4 @@
-.product-img-container:hover .btns-container button{
+.special-product-img-container:hover .btns-container button{
   transform: scale(1);
 }
 .btns-container button{
@@ -14,4 +14,11 @@
 }
 .product-img-container:hover .add-to-cart{
   opacity: 1;
+}
+
+.best-seller-product-img-container:hover .first-image{
+  opacity: 0;
+}
+.secondary-container:hover .secondary-container-hover{
+  @apply text-secondary;
 }
