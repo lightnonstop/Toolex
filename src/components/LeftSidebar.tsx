@@ -262,13 +262,13 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
                   <img className="cursor-pointer second-image" src={product.hoverImage} alt={product.name} />
                   <div className="absolute flex flex-row -bottom-2 gap-3 btns-container">
                     <button className="bg-secondary p-3 rounded-full duration-500 transition-all hover:bg-primary">
-                      <AiFillHeart className="text-white rounded-full text-xl" />
+                      <AiFillHeart className="text-white rounded-full text-sm" />
                     </button>
                     <button className="bg-secondary p-3 rounded-full duration-500 transition-all hover:bg-primary">
-                      <AiFillEye className="text-white rounded-full text-xl" />
+                      <AiFillEye className="text-white rounded-full text-sm" />
                     </button>
                     <button className="bg-secondary p-3 rounded-full duration-500 transition-all hover:bg-primary">
-                      <MdCompare className="text-white rounded-full text-xl" />
+                      <MdCompare className="text-white rounded-full text-sm" />
                     </button>
                   </div>
                 </div>
