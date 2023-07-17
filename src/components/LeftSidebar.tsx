@@ -5,7 +5,7 @@ import { BiPaperPlane } from 'react-icons/bi';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css'
 import 'slick-carousel/slick/slick-theme.css'
-import { MouseEventHandler, useState } from "react";
+import { MouseEventHandler, useEffect, useState } from "react";
 import ReactStars from 'react-rating-stars-component';
 
 const sideNavItems = [
