@@ -9,6 +9,10 @@
   opacity: 0;
 }
 
+.deal-product-img-container:hover .first-image{
+  opacity: 0;
+}
+
 .product-img-container:hover .stars{
   opacity: 0;
 }
