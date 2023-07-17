@@ -162,8 +162,8 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
     autoplaySpeed: 3000,
   }
   return (
-    <section className="py-5 pl-12 max-tablet:pl-16 max-mobile:pl-4 max-desktop:pl-4 flex flex-col w-64">
-      <nav className="border-2 border-primary rounded px-4 py-2 h-[27rem] w-full">
+    <section className="py-5 pl-12 max-tablet:px-16 max-mobile:px-4 max-desktop:pl-4 flex flex-col w-64 max-tablet:w-full">
+      <nav className="border-2 border-primary rounded px-4 py-2 h-[27rem] w-full max-tablet:hidden">
         <ul>
           {sideNavItems.map((item, index) => (
             <li key={index} className="flex flex-row items-center justify-between border-b border-b-dimGrey hover:text-primary cursor-pointer">
