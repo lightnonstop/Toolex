@@ -5,7 +5,7 @@
   transform: scale(0);
 }
 
-.product-img-container:hover .first-image{
+.special-product-img-container:hover .first-image{
   opacity: 0;
 }
 
