@@ -215,7 +215,7 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
           </Slider>
         </div>
 
-        <div className="overflow-hidden rounded cursor-pointer">
+        <div className="overflow-hidden rounded cursor-pointer max-tablet:hidden">
           <img className="w-full" src={leftBanner} alt="left-banner" />
         </div>
 
