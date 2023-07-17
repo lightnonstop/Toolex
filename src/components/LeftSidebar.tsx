@@ -237,7 +237,7 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
               <div key={index} className="special-product-img-container">
                 <div className="flex flex-row items-center justify-center mb-4 relative">
                   <span className="capitalize absolute -top-1 text-secondary text-sm font-semibold right-2 z-20">on sale!</span>
-                  <img className="cursor-pointer first-image absolute z-0 duration-300 transition-all" src={product.mainImage} alt={product.name} />
+                  <img className="cursor-pointer first-image absolute z-0 duration-300 transition-all h-full" src={product.mainImage} alt={product.name} />
                   <img className="cursor-pointer second-image" src={product.hoverImage} alt={product.name} />
                   <div className="absolute flex flex-row -bottom-2 gap-3 btns-container">
                     <button className="bg-secondary p-3 rounded-full duration-500 transition-all hover:bg-primary">
