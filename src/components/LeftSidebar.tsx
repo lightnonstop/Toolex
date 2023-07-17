@@ -224,10 +224,10 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
           <div className="flex flex-row items-center justify-between bg-primary p-2 rounded">
             <p className="capitalize text-white font-semibold">Special products</p>
             <div className="flex flex-row items-center justify-between gap-2">
-              <button type="button" onClick={sliderRef?.slickPrev}>
+              <button type="button" onClick={specialProductSliderRef?.slickPrev}>
                 <AiFillCaretLeft className="text-white hover:text-veryDimGrey" />
               </button>
-              <button type="button" onClick={sliderRef?.slickNext}>
+              <button type="button" onClick={specialProductSliderRef?.slickNext}>
                 <AiFillCaretRight className="text-white hover:text-veryDimGrey" />
               </button>
             </div>
