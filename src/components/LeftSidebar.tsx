@@ -152,8 +152,20 @@ interface LeftSidebarProps {
   toggleCategory: boolean;
 }
 function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
-  const [sliderRef, setSliderRef] = useState<{ slickPrev: MouseEventHandler<HTMLButtonElement>; slickNext: MouseEventHandler<HTMLButtonElement>; } | null>(null);
-  const sliderSettings = {
+  const [testimonialSliderRef, setTestimonialSliderRef] = useState<{ slickPrev: MouseEventHandler<HTMLButtonElement>; slickNext: MouseEventHandler<HTMLButtonElement>; } | null>(null);
+  const [specialProductSliderRef, setSpecialProductSliderRef] = useState<{ slickPrev: MouseEventHandler<HTMLButtonElement>; slickNext: MouseEventHandler<HTMLButtonElement>; } | null>(null);
+
+
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+  const specialProductSliderSettings = {
+    // infinite: true,
+    arrows: false,
+    slidesToShow: windowWidth < 991 && windowWidth > 480 ? 3 : 1,
+    // autoplay: true,
+    autoplaySpeed: 3000,
+  }
+
+  const testimonialSliderSettings ={
     // infinite: true,
     arrows: false,
     slidesToShow: 1,
