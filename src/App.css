@@ -1,6 +1,10 @@
 .special-product-img-container:hover .btns-container button{
   transform: scale(1);
 }
+
+.deal-product-img-container:hover .btns-container button{
+  transform: scale(1);
+}
 .btns-container button{
   transform: scale(0);
 }
@@ -13,13 +17,18 @@
   opacity: 0;
 }
 
-.product-img-container:hover .stars{
+.special-product-img-container:hover .stars{
   opacity: 0;
 }
-.product-img-container:hover .add-to-cart{
+.special-product-img-container:hover .add-to-cart{
   opacity: 1;
 }
-
+.deal-product-img-container:hover .stars{
+  opacity: 0;
+}
+.deal-product-img-container:hover .add-to-cart{
+  opacity: 1;
+}
 .best-seller-product-img-container:hover .first-image{
   opacity: 0;
 }
