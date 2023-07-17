@@ -166,7 +166,7 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
       <nav className="border-2 border-primary rounded px-4 py-2 h-[27rem] w-full">
         <ul>
           {sideNavItems.map((item, index) => (
-            <li className="flex flex-row items-center justify-between border-b border-b-dimGrey hover:text-primary cursor-pointer">
+            <li key={index} className="flex flex-row items-center justify-between border-b border-b-dimGrey hover:text-primary cursor-pointer">
               <div className="flex flex-row items-center justify-between gap-3 py-2">
                 <img src={item.image} alt={item.label} />
                 <p className="text-sm">{item.label}</p>
