@@ -186,7 +186,7 @@ function LeftSidebar({ toggleCategory }: LeftSidebarProps) {
       </nav>
 
       <div className={`duration-500 ${toggleCategory ? "-translate-y-0 mt-8" : "-translate-y-[27rem] mt-0"} transition-all flex flex-col gap-8`}>
-        <div className={`border border-t-dimGrey bg-white rounded p-1 h-[27rem] w-full z-20 hover:
+        <div className={`border border-t-dimGrey bg-white rounded p-1 w-full z-20 hover:
        flex flex-col gap-6`}>
           <div className="flex flex-row items-center justify-between bg-primary p-2 rounded">
             <p className="capitalize text-white font-semibold">our testimonial</p>
