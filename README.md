@@ -1,6 +1,6 @@
 # Toolex
 
-Sales building, construction tools
+Sale building and construction tools
 
 > **This project was for my own general practice.**
 
